@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+img{
+    height: 100%;
+    width: auto;
+}
+
+.topbar {
+    background-color: #005d97;
+}
+
+div.topbar {
+    z-index: 99;
+    position: sticky;
+    top: 0;
+    height: 10%;
+    display: flex;
+    align-items: center;
+}
+
+div.topbar-item {
+    height: 90%;
+    display: flex;
+}
+
+#menu {
+    flex: 1 1 0;
+    justify-content: left;
+    padding-left: 2%;
+}
+
+#logo {
+    justify-content: center;
+    flex: 4 4 0;
+}
+
+#spacer {
+    flex: 1 1 0;
+    justify-content: right;
+    padding-right: 2%;
+}
+
+#main-banner {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    background-image: url(../assets/banner-placeholder.png);
+    background-size: cover;
+}
