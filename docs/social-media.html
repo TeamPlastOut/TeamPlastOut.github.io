@@ -1,8 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ontouchmove>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/topbar.css"/>
 
     <link rel="icon" type="image/png" href="assets/favicomatic/favicon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="assets/favicomatic/favicon-16x16.png" sizes="16x16" />    
@@ -10,6 +12,24 @@
     <title>Our Social Media</title>
 </head>
 <body>
-    
+    <div class="topbar">
+        <div class="topbar-item" id="menu">
+            <img src="assets/PLACEHOLDER MENU ICON.png" id="menu-button">
+            <div id="navigator">
+                <a href="index.html" class="navigator-item">Home</a>
+                <a href="plastout-challenge.html" class="navigator-item">The PlastOut Challenge</a>
+                <a href="mission.html" class="navigator-item">Our Mission</a>
+            </div>
+            <div id="mask"></div>
+        </div>
+
+
+        <div class="topbar-item" id="logo">
+            <img src="assets/PlastOut.svg">
+        </div>
+
+        <div class="topbar-item" id="spacer">
+        </div>
+    </div>
 </body>
 </html>

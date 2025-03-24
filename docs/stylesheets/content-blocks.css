@@ -37,14 +37,16 @@ div.left-block {
     z-index: 2;
     width: 40%;
     left: 0px;
+    padding: 2% 0% 0% 2%;
 }
 
 div.right-block {
-    text-align: right;
+    text-align: left;
     position: absolute;
     z-index: 2;
     width: 40%;
     right: 0px;
+    padding: 2% 2% 0% 0%;
 }
 
 img.left-block {
