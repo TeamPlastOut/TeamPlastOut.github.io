@@ -9,33 +9,73 @@ html, body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-img{
+img {
     height: 100%;
     width: auto;
 }
 
-.topbar {
-    background-color: #005d97;
-}
-
 div.topbar {
-    z-index: 99;
-    position: sticky;
+    position: fixed;
     top: 0;
+    width: 100%;
     height: 10%;
     display: flex;
     align-items: center;
+    background-color: #005d97;
+    z-index: 100;
 }
 
 div.topbar-item {
     height: 90%;
     display: flex;
+    z-index: 5;
 }
 
 #menu {
     flex: 1 1 0;
     justify-content: left;
-    padding-left: 2%;
+    display: block;
+}
+
+#mask {
+    width: 50%;
+    height: 100%;
+    top: 0px;
+    position: absolute;
+    z-index: 4;
+    background-color: #005d97;
+}
+
+#navigator {
+    width: 50%;
+    height: 500%;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    background-color: #0092a8;
+    transition: transform 1s;
+    z-index: 3;
+    /* display: block; */
+}
+
+#menu-button {
+    position: absolute;
+    padding-left: 3%;
+    z-index: 6;
+    top: 0;
+    left: 0;
+}
+
+#menu-button:hover + #navigator {
+    transform: translateY(100%);
+}
+
+#navigator:hover {
+    transform: translateY(100%);
+}
+
+.navigator-item {
+    display: block;
 }
 
 #logo {
@@ -46,7 +86,6 @@ div.topbar-item {
 #spacer {
     flex: 1 1 0;
     justify-content: right;
-    padding-right: 2%;
 }
 
 #main-banner {
