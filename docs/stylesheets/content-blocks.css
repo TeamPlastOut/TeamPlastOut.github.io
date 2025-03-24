@@ -5,6 +5,7 @@
     height: 75%;
     overflow: hidden;
     display: flex;
+    color: white;
 }
 
 .poly-container {
@@ -18,7 +19,7 @@
 svg.poly-container {
     width: 100%;
     height: 100%;
-    fill: #fffadb;
+    fill: #002645;
 }
 
 .content-banner {
@@ -47,11 +48,11 @@ div.right-block {
 }
 
 img.left-block {
-    top: -25%;
-    right: -25%;
+    right: -33%;
+    width: 100%;
 }
 
 img.right-block {
-    top: -25%;
-    left: -25%;
+    left: -33%;
+    width: 100%;
 }
