@@ -21,15 +21,11 @@ svg.poly-container {
     height: 100%;
     fill: #002645;
 }
-
+/* 
 .content-banner {
-    z-index: 0;
-    position: absolute;
-    min-width: 100%;
-    min-height: 100%;
     width: auto;
     height: auto;
-}
+} */
 
 div.left-block {
     text-align: left;
@@ -49,12 +45,35 @@ div.right-block {
     padding: 2% 2% 0% 0%;
 }
 
+.content-banner-container-left {
+    background-color: black;
+    position: absolute;
+    width: 60%;
+    height: 100%;
+    right: 0;
+    overflow: hidden;
+    display: block;
+    margin: auto;
+}
+
+.content-banner-container-right {
+    background-color: black;
+    position: absolute;
+    width: 60%;
+    height: 100%;
+    left: 0;
+    overflow: hidden;
+    display: block;
+    margin: auto;
+}
+
 img.left-block {
-    right: -33%;
-    width: 100%;
+    height: 100%;
+    width: auto;
 }
 
 img.right-block {
-    left: -33%;
-    width: 100%;
+    left: 0px;
+    height: 100%;
+    width: auto;
 }

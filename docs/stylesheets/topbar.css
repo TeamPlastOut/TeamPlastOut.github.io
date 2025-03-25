@@ -105,3 +105,7 @@ div.topbar-item {
     background-image: url(../assets/banner-placeholder.png);
     background-size: cover;
 }
+
+#spacer {
+    height: 10%;
+}

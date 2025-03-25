@@ -18,11 +18,11 @@
             <div id="navigator">
                 <a href="index.html" class="navigator-item">Home</a>
                 <a href="mission.html" class="navigator-item">Our Mission</a>
+                <a href="plastout-challenge.html" class="navigator-item">The PlastOut Challenge</a>
                 <a href="social-media.html" class="navigator-item">Our Social Media</a>
             </div>
             <div id="mask"></div>
         </div>
-
 
         <div class="topbar-item" id="logo">
             <img src="assets/PlastOut.svg">
@@ -31,5 +31,22 @@
         <div class="topbar-item" id="spacer">
         </div>
     </div>
+    <div id="spacer"></div>
+
+    <form enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSdfIWtmXku_Fr8KBjvFm9jQzssT7wsOR5wI11bHqlKcW2l4Vw/formResponse" target="hidden_iframe" onsubmit="submitted=true;">
+        <input type="email" name="entry.131809076">
+        <select name="entry.29804402">
+            <option value="Choose" selected disabled>Choose</option>
+            <option value="24 Hours">24 Hours</option>
+            <option value="3 Days">3 Days</option>
+            <option value="1 Week">1 Week</option>
+            <option value="1 Month">1 Month</option>
+            <option value="3 Months">3 Months</option>
+            <option value="6 Months">6 Month</option>
+            <option value="1 Year">1 Year</option>
+        </datalist>
+        <input type="submit">
+    </form>
+    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
 </body>
 </html>
