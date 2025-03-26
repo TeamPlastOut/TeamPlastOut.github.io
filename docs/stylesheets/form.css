@@ -1,0 +1,75 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+.main-image {
+    width: 100%;
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+form {
+    width: 100%;
+    height: 100%;
+    max-width: 720px;
+    background-color: #002645;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.field {
+    all: unset;
+    box-sizing: border-box;
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 90%;
+    text-align: left;
+    padding: 2%;
+}
+
+select.field {
+    background-image: url(../assets/down-arrow.svg);
+    background-position-x: 95%;
+    background-position-y: center;
+    background-size: 5%;
+    background-repeat: no-repeat;
+}
+
+.field[type=submit] {
+    background-color: #24B3E8;
+    transition: 0.1s;
+}
+.field[type=submit]:hover {
+    background-color: #005663;
+}
+
+.submitted-box {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.submitted-box > h3 {
+    margin-top: 5%;
+}
+
+img.check-mark {
+    transform: rotateY(180deg);
+    transition: 0.5s ease-out;
+    -webkit-filter: invert(100%); /* Safari/Chrome */
+    filter: invert(100%);
+    margin-top: 10%;
+}
+
+img.submitted {
+    transform: rotateY(0deg);
+}

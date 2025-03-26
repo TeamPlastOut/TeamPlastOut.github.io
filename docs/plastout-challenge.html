@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" type="text/css" href="stylesheets/topbar.css"/>
+    <link rel="stylesheet" type="text/css" href="stylesheets/form.css"/>
 
     <link rel="icon" type="image/png" href="assets/favicomatic/favicon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="assets/favicomatic/favicon-16x16.png" sizes="16x16" />    
@@ -14,12 +15,11 @@
 <body>
     <div class="topbar">
         <div class="topbar-item" id="menu">
-            <img src="assets/PLACEHOLDER MENU ICON.png" id="menu-button">
+            <img src="assets/PLACEHOLDER MENU ICON.png" id="menu-button" class="topbar-item">
             <div id="navigator">
                 <a href="index.html" class="navigator-item">Home</a>
-                <a href="mission.html" class="navigator-item">Our Mission</a>
                 <a href="plastout-challenge.html" class="navigator-item">The PlastOut Challenge</a>
-                <a href="social-media.html" class="navigator-item">Our Social Media</a>
+                <a href="mission.html" class="navigator-item">Our Mission</a>
             </div>
             <div id="mask"></div>
         </div>
@@ -33,20 +33,27 @@
     </div>
     <div id="spacer"></div>
 
-    <form enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSdfIWtmXku_Fr8KBjvFm9jQzssT7wsOR5wI11bHqlKcW2l4Vw/formResponse" target="hidden_iframe" onsubmit="submitted=true;">
-        <input type="email" name="entry.131809076">
-        <select name="entry.29804402">
-            <option value="Choose" selected disabled>Choose</option>
-            <option value="24 Hours">24 Hours</option>
-            <option value="3 Days">3 Days</option>
-            <option value="1 Week">1 Week</option>
-            <option value="1 Month">1 Month</option>
-            <option value="3 Months">3 Months</option>
-            <option value="6 Months">6 Month</option>
-            <option value="1 Year">1 Year</option>
-        </datalist>
-        <input type="submit">
-    </form>
-    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+    <main>
+        <img src="assets/stat.jpg" class="main-image">
+
+        <form id="form" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSdfIWtmXku_Fr8KBjvFm9jQzssT7wsOR5wI11bHqlKcW2l4Vw/formResponse" target="hidden_iframe" onsubmit="submit_form()">
+            <input type="email" name="entry.131809076" class="field" placeholder="username@email.web" required>
+            <select id="duration" name="entry.29804402" class="field" required>
+                <option value="" selected disabled>Choose</option>
+                <option value="24 Hours">24 Hours</option>
+                <option value="3 Days">3 Days</option>
+                <option value="1 Week">1 Week</option>
+                <option value="1 Month">1 Month</option>
+                <option value="3 Months">3 Months</option>
+                <option value="6 Months">6 Month</option>
+                <option value="1 Year">1 Year</option>
+            </select>
+            <input type="submit" class="field">
+        </form>
+
+        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+    </main>
+
+    <script src="form.js"></script>
 </body>
 </html>

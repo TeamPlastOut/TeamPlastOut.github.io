@@ -1,21 +1,14 @@
-// const menu_button = document.getElementById("menu-button");
-// const nav = document.getElementById("navigator");
+const imgs = document.getElementsByClassName("content-banner");
 
-// function openNav() {
-//     menu_button.onclick = closeNav
+function resize(e) {
+    if(e.parentElement.offsetHeight / e.parentElement.offsetWidth < e.naturalHeight / e.naturalWidth) {
+        e.width = e.parentElement.offsetWidth;
+    } else {
+        e.height = e.parentElement.offsetHeight;
+    }
+}
 
-//     nav.style.height = "100%";
-//     nav.style.width = "100%";
 
-//     nav.style.opacity = 0.75;
-//     nav.style.backgroundColor = "#474747";
-
-//     nav.onclick = closeNav;
-// }
-
-// function closeNav() {
-//     menu_button.onclick = openNav;
-
-//     nav.style.height = "0px";
-//     nav.style.width = "0px";    
-// }
+for(let x = 0; x < imgs.length; x++) {
+    imgs[x].onload = resize(imgs[x]);
+}

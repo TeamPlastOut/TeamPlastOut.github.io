@@ -9,7 +9,7 @@ html, body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-img {
+img.topbar-item {
     height: 100%;
     width: auto;
 }
@@ -21,7 +21,7 @@ div.topbar {
     height: 10%;
     display: flex;
     align-items: center;
-    background-color: #005d97;
+    background-color: #3A8AD1;
     z-index: 100;
 }
 
@@ -43,7 +43,7 @@ div.topbar-item {
     top: 0px;
     position: absolute;
     z-index: 4;
-    background-color: #005d97;
+    background-color: #3A8AD1;
 }
 
 #navigator {
@@ -51,8 +51,8 @@ div.topbar-item {
     position: absolute;
     bottom: 0px;
     left: 0px;
-    background-color: #0092a8;
-    transition: transform 1s;
+    background-color: #24B3E8;
+    transition: transform 0.5s;
     z-index: 3;
     /* display: block; */
 }
@@ -101,7 +101,7 @@ div.topbar-item {
 
 #main-banner {
     width: 100%;
-    aspect-ratio: 4 / 3;
+    aspect-ratio: 8 / 3;
     background-image: url(../assets/banner-placeholder.png);
     background-size: cover;
 }

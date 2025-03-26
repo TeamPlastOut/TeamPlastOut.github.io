@@ -2,7 +2,7 @@
     background-position: center;
     position: relative;
     width: 100%;
-    height: 75%;
+    height: 60%;
     overflow: hidden;
     display: flex;
     color: white;
@@ -21,17 +21,13 @@ svg.poly-container {
     height: 100%;
     fill: #002645;
 }
-/* 
-.content-banner {
-    width: auto;
-    height: auto;
-} */
 
 div.left-block {
     text-align: left;
     position: absolute;
     z-index: 2;
     width: 40%;
+    height: 100%;
     left: 0px;
     padding: 2% 0% 0% 2%;
 }
@@ -41,6 +37,7 @@ div.right-block {
     position: absolute;
     z-index: 2;
     width: 40%;
+    height: 100%;
     right: 0px;
     padding: 2% 2% 0% 0%;
 }
@@ -53,27 +50,86 @@ div.right-block {
     right: 0;
     overflow: hidden;
     display: block;
-    margin: auto;
 }
 
 .content-banner-container-right {
-    background-color: black;
     position: absolute;
     width: 60%;
     height: 100%;
     left: 0;
     overflow: hidden;
     display: block;
+}
+
+.content-banner {
     margin: auto;
 }
 
-img.left-block {
-    height: 100%;
-    width: auto;
+.more-button {
+    all: unset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 4px white solid; */
+    border-radius: 10px;
+    background-color: #24B3E8;
+    width: 100%;
+    height: 15%;
+    font-size: 150%;
 }
 
-img.right-block {
-    left: 0px;
-    height: 100%;
-    width: auto;
+.arrow {
+    transition: 0.1s;
+    margin-left: 1%;
+}
+
+.more-button:hover {
+    background-color: #005663;
+}
+
+.more-button:hover > .arrow {
+    transform: translateX(40%);
+}
+
+a.social-button {
+    all: unset;
+    display: inline-block;
+    aspect-ratio: 1 / 1;
+    width: 30%;
+    border-radius: 10px;
+    background-color: #24B3E8;
+    transition: 0.1s;
+    position: relative;
+}
+
+a.social-button:hover {
+    background-color: #005663;
+}
+
+a.social-button:hover > img {
+    transform: scale(90%);
+}
+
+img.social-button {
+    display: block;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 90%;
+    height: 90%;
+    -webkit-filter: invert(100%); /* Safari/Chrome */
+    filter: invert(100%);
+}
+
+h1.content {
+    font-size: 200%;
+    margin-bottom: 5%;
+}
+
+h2.content {
+    font-size: 100%;
+    margin-bottom: 10%;
 }
