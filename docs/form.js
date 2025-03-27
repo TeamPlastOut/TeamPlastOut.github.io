@@ -1,7 +1,17 @@
 const form = document.getElementById("form");
+const goto = document.getElementById("goto-signup");
+
+function valid_email(email) {
+    const pattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return pattern.test(email);
+}
 
 function submit_form() {
-    const nodes = form.childNodes;
+    if(!(valid_email(form.children[0].value) && form.children[1].value != "")) {
+        return false;
+    }
+
+    const nodes = form.children;
     const len = nodes.length;
 
     const div = document.createElement("div");
@@ -31,3 +41,15 @@ function submit_form() {
 
     img.onload = () => { img.classList.add("submitted"); };
 }
+
+document.addEventListener("scroll", () => {
+    let form_pos = form.getBoundingClientRect();
+    let goto_pos = goto.getBoundingClientRect();
+
+    console.log(form_pos.y + ' ' + goto_pos.y);
+    if((form_pos.y - (goto_pos.y + goto_pos.height)) <= 0) {
+        goto.style.visibility = "hidden"
+    } else {
+        goto.style.visibility = "visible";
+    }
+})

@@ -6,6 +6,7 @@
 
     <link rel="stylesheet" type="text/css" href="stylesheets/topbar.css"/>
     <link rel="stylesheet" type="text/css" href="stylesheets/form.css"/>
+    <link rel="stylesheet" type="text/css" href="stylesheets/blog-style.css"/>
 
     <link rel="icon" type="image/png" href="assets/favicomatic/favicon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="assets/favicomatic/favicon-16x16.png" sizes="16x16" />    
@@ -33,13 +34,33 @@
     </div>
     <div id="spacer"></div>
 
-    <main>
+    <main style="background-image: url(assets/ocean.jpg);">
+        <h1 id="title">The PlastOut Challenge</h1>
+        
         <img src="assets/stat.jpg" class="main-image">
+
+        <div id="goto-signup">
+            <a href="#form"><img src="assets/double-arrow-down.svg"></a> 
+        </div>
+
+        <div class="content-container">
+            <h2>Plastic consumption is a detriment to:</h2><br>
+            <h3>&nbsp;-Your health</h3><br>
+            <h3>&nbsp;-Your surroundings</h3><br>
+            <h3>&nbsp;-Your favourite animals</h3><br>
+            <h2>Try to replace or stop using some everyday single-use plastics:</h2><br>
+            <h3>&nbsp;-Plastic bags</h3><br>
+            <h3>&nbsp;-Plastic bottles</h3><br>
+            <h3>&nbsp;-Plastic wrappers</h3>
+            <br>
+            <br>
+            <h1>Enter your email:</h1>
+        </div>
 
         <form id="form" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSdfIWtmXku_Fr8KBjvFm9jQzssT7wsOR5wI11bHqlKcW2l4Vw/formResponse" target="hidden_iframe" onsubmit="submitted=true;">
             <input type="email" name="entry.131809076" class="field" placeholder="username@email.web" required>
             <select id="duration" name="entry.29804402" class="field" required>
-                <option value="" selected disabled>Choose</option>
+                <option value="" selected disabled>Duration</option>
                 <option value="24 Hours">24 Hours</option>
                 <option value="3 Days">3 Days</option>
                 <option value="1 Week">1 Week</option>
