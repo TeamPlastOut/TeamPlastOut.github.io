@@ -43,11 +43,11 @@ select.field {
     background-repeat: no-repeat;
 }
 
-.field[type=submit] {
+button.field {
     background-color: #24B3E8;
     transition: 0.1s;
 }
-.field[type=submit]:hover {
+button.field:hover {
     background-color: #005663;
 }
 

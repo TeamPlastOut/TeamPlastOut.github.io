@@ -19,6 +19,8 @@ function submit_form() {
 
     txt.appendChild(document.createTextNode("Submitted. Thank you for commiting for " + duration + "."));
     
+    form.submit();
+
     for(let i = 0; i < len; i++) {
         form.removeChild(nodes[0]);
     }
@@ -26,6 +28,6 @@ function submit_form() {
     div.appendChild(img);
     div.appendChild(txt);
     form.appendChild(div);
-    
+
     img.onload = () => { img.classList.add("submitted"); };
 }

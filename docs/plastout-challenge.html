@@ -36,7 +36,7 @@
     <main>
         <img src="assets/stat.jpg" class="main-image">
 
-        <form id="form" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSdfIWtmXku_Fr8KBjvFm9jQzssT7wsOR5wI11bHqlKcW2l4Vw/formResponse" target="hidden_iframe" onsubmit="submit_form()">
+        <form id="form" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSdfIWtmXku_Fr8KBjvFm9jQzssT7wsOR5wI11bHqlKcW2l4Vw/formResponse" target="hidden_iframe" onsubmit="submitted=true;">
             <input type="email" name="entry.131809076" class="field" placeholder="username@email.web" required>
             <select id="duration" name="entry.29804402" class="field" required>
                 <option value="" selected disabled>Choose</option>
@@ -48,10 +48,10 @@
                 <option value="6 Months">6 Month</option>
                 <option value="1 Year">1 Year</option>
             </select>
-            <input type="submit" class="field">
+            <button class="field" onclick="submit_form()">Submit</button>
         </form>
 
-        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
     </main>
 
     <script src="form.js"></script>
