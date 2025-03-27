@@ -42,13 +42,17 @@ div.right-block {
     padding: 2% 2% 0% 0%;
 }
 
+.content-banner {
+    position: absolute;
+}
+
 .content-banner-container-left {
     background-color: black;
     position: absolute;
     width: 60%;
     height: 100%;
     right: 0;
-    overflow: hidden;
+    /* overflow: hidden; */
     display: block;
 }
 
@@ -57,12 +61,8 @@ div.right-block {
     width: 60%;
     height: 100%;
     left: 0;
-    overflow: hidden;
+    /* overflow: hidden; */
     display: block;
-}
-
-.content-banner {
-    margin: auto;
 }
 
 .more-button {

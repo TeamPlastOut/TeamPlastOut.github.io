@@ -7,6 +7,17 @@ window.addEventListener("load", () => {
         } else {
             e.height = e.parentElement.offsetHeight;
         }
+
+        e.style.top = ((e.parentElement.offsetHeight - e.height) / 2) + "px";
+        console.log(e.parentElement.offsetHeight + " - " + e.height);
+
+        if(e.classList.contains("left-block")) { //image on the right
+            e.style.right = ((e.parentElement.offsetWidth - e.width)  * 0.55) + "px";
+            // console.log(e.style.right);
+        } else {
+            e.style.left = ((e.parentElement.offsetWidth - e.width) * 0.55) + "px";
+            // console.log(e.style.left);
+        }
     }
     
     for(let x = 0; x < imgs.length; x++) {
