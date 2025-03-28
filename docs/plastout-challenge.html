@@ -26,7 +26,7 @@
         </div>
 
         <div class="topbar-item" id="logo">
-            <img src="assets/PlastOut.svg">
+            <img src="assets/PlastOut.svg" class="topbar-item">
         </div>
 
         <div class="topbar-item" id="spacer">
@@ -56,8 +56,7 @@
             <br>
             <h1>Enter your email:</h1>
         </div>
-
-        <form id="form" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSdfIWtmXku_Fr8KBjvFm9jQzssT7wsOR5wI11bHqlKcW2l4Vw/formResponse" target="hidden_iframe" onsubmit="submitted=true;">
+        <form id="form" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSdfIWtmXku_Fr8KBjvFm9jQzssT7wsOR5wI11bHqlKcW2l4Vw//formResponse" target="hidden_iframe" onsubmit="submitted=true;">
             <input type="email" name="entry.131809076" class="field" placeholder="username@email.web" required>
             <select id="duration" name="entry.29804402" class="field" required>
                 <option value="" selected disabled>Duration</option>
@@ -69,6 +68,19 @@
                 <option value="6 Months">6 Month</option>
                 <option value="1 Year">1 Year</option>
             </select>
+            <div class="field">
+                <h4>How will you complete the challenge?</h4><br>
+                <input type="checkbox" name="entry.592208442" id="rdbottle" value="Reduce use of single-use plastic beverage bottles">
+                <label for="rdbottle">Reduce my use of single-use <b>plastic beverage bottles</b>.</label><br>
+                <input type="checkbox" name="entry.592208442" id="rdbag" value="Reduce use of single-use plastic bags">
+                <label for="rdbag">Reduce my use of single-use <b>plastic bags</b>.</label><br>
+                <input type="checkbox" name="entry.592208442" id="rdutensil" value="Reduce use of single-use plastic utensils">
+                <label for="rdutensil">Reduce my use of single-use <b>plastic utensils</b>.</label><br>
+                <input type="checkbox" name="entry.592208442" id="rdother" value="Reduce use of other plastic items">
+                <label for="rdother">Reduce my use of other plastic <b>other items</b>.</label><br>
+                <input type="checkbox" name="entry.592208442" id="ruitem" value="Reuse single-use plastic items">
+                <label for="ruitem">Reuse my single-use <b>plastic items</b>.</label>
+            </div>
             <button class="field" onclick="submit_form()">Submit</button>
         </form>
 

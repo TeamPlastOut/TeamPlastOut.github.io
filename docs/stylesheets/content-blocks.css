@@ -52,7 +52,7 @@ div.right-block {
     width: 60%;
     height: 100%;
     right: 0;
-    /* overflow: hidden; */
+    overflow: hidden;
     display: block;
 }
 

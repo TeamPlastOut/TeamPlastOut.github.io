@@ -7,7 +7,9 @@ function valid_email(email) {
 }
 
 function submit_form() {
-    if(!(valid_email(form.children[0].value) && form.children[1].value != "")) {
+    const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+
+    if(!(valid_email(form.children[0].value) && form.children[1].value != "" && Array.from(checkboxes).some(x => x.checked))) {
         return false;
     }
 

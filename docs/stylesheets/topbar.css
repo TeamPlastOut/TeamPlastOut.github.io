@@ -27,14 +27,9 @@ div.topbar {
 
 div.topbar-item {
     height: 90%;
-    display: flex;
     z-index: 5;
-}
-
-#menu {
-    flex: 1 1 0;
-    justify-content: left;
-    display: block;
+    display: flex;
+    align-items: center;
 }
 
 #mask {
@@ -47,7 +42,8 @@ div.topbar-item {
 }
 
 #navigator {
-    width: 50%;
+    width: 25%;
+    min-width: 150px;
     position: absolute;
     bottom: 0px;
     left: 0px;
@@ -58,11 +54,11 @@ div.topbar-item {
 }
 
 #menu-button {
-    position: absolute;
-    padding-left: 3%;
+    height: 90%;
+    display: block;
+    position: relative;
+    padding-left: 7%;
     z-index: 6;
-    top: 0;
-    left: 0;
 }
 
 #menu-button:hover + #navigator {
@@ -88,6 +84,11 @@ div.topbar-item {
     background-color: #005663;
 }
 
+#menu {
+    flex: 1 1 0;
+    height: 70%;
+}
+
 #logo {
     justify-content: center;
     flex: 4 4 0;
@@ -95,7 +96,7 @@ div.topbar-item {
 
 #spacer {
     flex: 1 1 0;
-    justify-content: right;
+    justify-content: center;
 }
 
 #main-banner {
