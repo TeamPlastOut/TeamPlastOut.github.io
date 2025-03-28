@@ -9,7 +9,6 @@ window.addEventListener("load", () => {
         }
 
         e.style.top = ((e.parentElement.offsetHeight - e.height) / 2) + "px";
-        console.log(e.parentElement.offsetHeight + " - " + e.height);
 
         if(e.classList.contains("left-block")) { //image on the right
             e.style.right = ((e.parentElement.offsetWidth - e.width)  * 0.55) + "px";

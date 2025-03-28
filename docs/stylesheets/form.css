@@ -98,12 +98,21 @@ select.field {
     background-repeat: no-repeat;
 }
 
+/* .field > input[type=checkbox] {
+    position: absolute;
+    opacity: 1;
+    cursor: pointer;
+    padding: 5% 5%;
+    background-color: grey;
+} */
+
 button.field {
     background-color: #24B3E8;
     color: white;
     transition: 0.1s;
     text-align: center;
 }
+
 button.field:hover {
     background-color: #005663;
 }

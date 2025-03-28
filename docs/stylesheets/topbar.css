@@ -36,9 +36,18 @@ div.topbar-item {
     width: 50%;
     height: 100%;
     top: 0px;
+    left: 0px;
     position: absolute;
     z-index: 4;
     background-color: #3A8AD1;
+}
+
+#fill {
+    top: 0;
+    position: absolute;
+    z-index: 5;
+    background-color: #3A8AD1;
+    height: 100%
 }
 
 #navigator {
@@ -57,12 +66,23 @@ div.topbar-item {
     height: 90%;
     display: block;
     position: relative;
-    padding-left: 7%;
     z-index: 6;
 }
 
-#menu-button:hover + #navigator {
+#menu-button:hover ~ #navigator {
     transform: translateY(100%);
+}
+
+#menu-button:hover ~ #fill {
+    background-color: #005663;
+}
+
+#fill:hover ~ #navigator {
+    transform: translateY(100%);
+}
+
+#fill:hover {
+    background-color: #005663;
 }
 
 #navigator:hover {
