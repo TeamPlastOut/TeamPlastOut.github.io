@@ -6,42 +6,53 @@ function valid_email(email) {
     return pattern.test(email);
 }
 
-function submit_form() {
-    const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+// form.addEventListener("submit", (e) => {
+//     e.preventDefault();
 
+//     return false;
+// })
+
+function submit_form(e) {
+    const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+    
     if(!(valid_email(form.children[0].value) && form.children[1].value != "" && Array.from(checkboxes).some(x => x.checked))) {
         return false;
     }
 
-    const nodes = form.children;
-    const len = nodes.length;
-
-    const div = document.createElement("div");
-    const img = document.createElement("img");
-    const txt = document.createElement("h3");
-
-    const duration = document.getElementById("duration").value;
-    
-    div.setAttribute("style", "height: " + form.offsetHeight + "px");
-    div.classList.add("submitted-box");
-
-    img.src = "assets/check-mark.svg";
-    img.height = form.offsetHeight * 0.5;
-    img.classList.add("check-mark");
-
-    txt.appendChild(document.createTextNode("Submitted. Thank you for commiting for " + duration + "."));
-    
     form.submit();
 
-    for(let i = 0; i < len; i++) {
-        form.removeChild(nodes[0]);
-    }
-    
-    div.appendChild(img);
-    div.appendChild(txt);
-    form.appendChild(div);
+    // const nodes = form.children;
+    // const len = nodes.length;
 
-    img.onload = () => { img.classList.add("submitted"); };
+    // const div = document.createElement("div");
+    // const img = document.createElement("img");
+    // const txt = document.createElement("h3");
+
+    // const duration = document.getElementById("duration").value;
+    
+    // div.setAttribute("style", "height: " + form.offsetHeight + "px");
+    // div.classList.add("submitted-box");
+
+    // img.src = "assets/check-mark.svg";
+    // img.height = form.offsetHeight * 0.5;
+    // img.classList.add("check-mark");
+
+    // txt.appendChild(document.createTextNode("Submitted. Thank you for commiting for " + duration + "."));
+
+    // e.preventDefault();
+    // e.stopPropagation();
+
+    // form.submit();
+
+    // for(let i = 0; i < len; i++) {
+    //     nodes[i].style.display = "none";
+    // }
+    
+    // div.appendChild(img);
+    // div.appendChild(txt);
+    // form.appendChild(div);
+
+    // img.onload = () => { img.classList.add("submitted"); };
 }
 
 document.addEventListener("scroll", () => {

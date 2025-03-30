@@ -57,7 +57,7 @@
             <br>
             <h1>Enter your email:</h1>
         </div>
-        <form id="form" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSdfIWtmXku_Fr8KBjvFm9jQzssT7wsOR5wI11bHqlKcW2l4Vw//formResponse" target="hidden_iframe" onsubmit="submitted=true;">
+        <form id="form" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSdfIWtmXku_Fr8KBjvFm9jQzssT7wsOR5wI11bHqlKcW2l4Vw//formResponse">
             <input type="email" name="entry.131809076" class="field" placeholder="username@email.web" required>
             <select id="duration" name="entry.29804402" class="field" required>
                 <option value="" selected disabled>Duration</option>
@@ -82,10 +82,10 @@
                 <input type="checkbox" name="entry.592208442" id="ruitem" value="Reuse single-use plastic items">
                 <label for="ruitem">Reuse my single-use <b>plastic items</b>.</label>
             </div>
-            <button class="field" onclick="submit_form()">Submit</button>
+            <button type="button" class="field" onclick="submit_form(event)">Submit</button>
         </form>
 
-        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+
     </main>
 
     <script src="form.js"></script>
